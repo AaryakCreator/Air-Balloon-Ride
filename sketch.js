@@ -59,7 +59,8 @@ function draw() {
   text("**Use arrow keys to move Hot Air Balloon!",40,40);
 }
 
- function updateHeight(x,y){
+
+function updateHeight(x,y){
    database.ref('balloon/height').set({
      'x': height.x + x ,
      'y': height.y + y
